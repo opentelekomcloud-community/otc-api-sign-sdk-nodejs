@@ -7,7 +7,7 @@ SDK for API request signing for NodeJS
 >         Work in progress....
 > ###############################################
 > </pre>
-> 
+>  
 
 ## Documentation
 
