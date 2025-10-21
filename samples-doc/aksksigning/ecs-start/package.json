@@ -1,0 +1,28 @@
+{
+  "name": "ecs-start",
+  "version": "1.0.0",
+  "description": "NodeJS sample to start ECS",
+  "keywords": [
+    "otc",
+    "opentelekomcloud",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "OpenTelekomCloud Community",
+  "type": "commonjs",
+  "main": "startECS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "dependencies": {
+    "otc-api-sign-sdk-nodejs": "file:../../..",
+    "https-proxy-agent": "^7.0.6"
+  },
+  "bundledDependencies": [
+    "otc-api-sign-sdk-nodejs",
+    "https-proxy-agent"
+  ],
+  "files": [
+    "/startECS.js"  ]
+}

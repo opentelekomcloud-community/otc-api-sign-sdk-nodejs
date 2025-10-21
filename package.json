@@ -1,0 +1,40 @@
+{
+  "name": "otc-api-sign-sdk-nodejs",
+  "version": "1.0.0",
+  "description": "SDK for API request signing for NodeJS.",
+  "keywords": [
+    "otc",
+    "opentelekomcloud",
+    "api"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/opentelekomcloud-community/otc-api-sign-sdk-nodejs#readme",
+  "bugs": {
+    "url": "https://github.com/opentelekomcloud-community/otc-api-sign-sdk-nodejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentelekomcloud-community/otc-api-sign-sdk-nodejs.git"
+  },
+  "license": "ISC",
+  "author": "OpenTelekomCloud Community",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --inspect index.js"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "https-proxy-agent": "^7.0.6"
+  },
+  "files": [
+    "index.js",
+    "signer.js",
+    "README.md",
+    "LICENSE"
+  ]
+}

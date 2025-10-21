@@ -1,0 +1,30 @@
+{
+  "name": "fg-ecs-start",
+  "version": "1.0.0",
+  "description": "NodeJS sample to start ECS using FunctionGraph",
+  "keywords": [
+    "otc",
+    "opentelekomcloud",
+    "functiongraph",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "OpenTelekomCloud Community",
+  "type": "commonjs",
+  "main": "startECS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpack": "tarball=$(npm list --depth 0 | sed 's/@/-/g; s/ .*/.tgz/g; 1q;'); tar -tf $tarball | sed 's/^package\\///' | zip -@r deploy; rm $tarball"    
+  },
+
+  "dependencies": {
+    "otc-api-sign-sdk-nodejs": "file:../../.."
+  },
+  "bundledDependencies": [
+    "otc-api-sign-sdk-nodejs"
+  ],
+  "files": [
+    "/startECS.js",
+    "/README.md"
+  ]
+}
