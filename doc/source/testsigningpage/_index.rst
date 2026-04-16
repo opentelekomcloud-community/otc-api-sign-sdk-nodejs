@@ -8,8 +8,7 @@ Test signing page
 
 Getting curl for an API request
 -------------------------------
-A simple HTML page is provided to demonstrate how to generate a signed API request
-using the otc-api-sign-sdk-nodejs package.
+A simple HTML page is provided to demonstrate how to generate a signed API request.
 
 Open the following URL in a browser (see note below):
 
@@ -46,3 +45,35 @@ in a browser with CORS disabled:
 
         chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
 
+Example usage
+----------------
+
+Querying FunctionGraph Functions API call
+""""""""""""""""""""""""""""""""""""""""""
+
+To generate a curl command to list all FunctionGraph functions in Project ``{your_project_id}`` in region eu-de, you can use the signing page as follows:
+using `Querying Functions API call <https://docs.otc.t-systems.com/function-graph/api-ref/api/function_lifecycle_management/querying_functions.html>`_
+
+set following parameters in the form:
+
+- **Access Key**: ``{your_access_key}`` (AK)
+- **Secret Key**: ``{your_secret_key}`` (SK)
+- **Security Token**: ``{your_security_token}`` (if using temporary credentials, otherwise leave it empty)
+- **Method**: GET
+- **Url**: \https://functiongraph.eu-de.otc.t-systems.com/v2/{your_project_id}/fgs/functions 
+  
+
+Addd following headers:
+
+- **Content-Type**: application/json
+- **X-Project-Id**: ``{your_project_id}``
+
+Then click the **Send request** button.
+
+The curl command will be generated and displayed in the section below.
+
+If the request is successful, you should see a response containing the list of functions
+in your FunctionGraph project.
+
+If you encounter CORS issues, copy the generated curl command and run it in your
+terminal to get the response directly without CORS restrictions.
