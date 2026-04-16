@@ -1,5 +1,5 @@
 {
-  "name": "otc-api-sign-sdk-nodejs",
+  "name": "@opentelekomcloud-community/otc-api-sign-sdk-nodejs",
   "version": "1.0.0",
   "description": "SDK for API request signing for NodeJS.",
   "keywords": [
