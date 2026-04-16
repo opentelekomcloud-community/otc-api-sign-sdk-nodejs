@@ -1,33 +1,9 @@
 # otc-api-sign-sdk-nodejs
 SDK for API request signing for NodeJS
 
-> [!Note]
-> <pre>
-> ###############################################
->         Work in progress....
-> ###############################################
-> </pre>
->  
-
 ## Documentation
 
 For documentation see: [otc-api-sign-sdk-nodejs](https://opentelekomcloud-community.github.io/otc-api-sign-sdk-nodejs/)
-
-
-## Getting curl for an API request
-
-To test api signature call, open
-
-```
-http://api_signature_demo.html
-```
-in a browser with CORS disabled.
-
-E.g. start chrome on Windows with following command:
-```
-chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
-```
-
 
 
 >[!NOTE]
